@@ -1,0 +1,12 @@
+How engines work:
+1) Reads the script
+2) Compiles to machine language
+3) Machine code runs
+
+What in-browser JS can't do:
+- Read/write arbitrary files on hard disk, no direct access to OS functions
+        - Modern browsers let it work with files, limited access, only provided if user does certain actions like dropping file into browser
+        - Can interact with cam/mic/other devices, but require a user's explicit permission
+- Different tabs/windows don't know each other, JS from one page can't access other if they come from different sites
+    - Pages must agree for data exchange that contains special JS code to handle
+- Can easily communicate to the server, but ability to receive data is limited
