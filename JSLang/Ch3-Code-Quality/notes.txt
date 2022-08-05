@@ -1,0 +1,6 @@
+Debug in browser:
+- Use devtools to get there
+- insert breakpoints on the side, right click for conditional breakpoint
+- Can pause code by using debugger; command in script
+
+(covered code writing best practices, tests, transpilers/polyfills)
