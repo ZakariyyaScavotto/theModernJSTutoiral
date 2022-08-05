@@ -1,0 +1,15 @@
+Objects have hidden property [[Prototype]] that's null or references another object (the prototype)
+- When property read from object and it's missing, JS takes from prototype
+- Older: Get/set by doing rabbit.__proto__ = animal
+- Newer: Get/set by doing .getPrototypeOf/setPrototypeOf 
+- An object can only have one [[Prototype]]
+- Prototype only used for reading properties, write/delete ops work directly with the object
+- "this" not affected by prototypes, always object before the dot
+
+F.prototype = smthng (ex: Rabbit.prototype = animal)
+- Sets prototype for every new Rabbit made to be animal
+- default prototype points back to itself
+
+constructor: used to create new oobject with same structure as existing one
+- have rabbit1, rabbit2 = new rabbit1.constructor('black rabbit')
+- JS doesn't ensure the right constructor value
