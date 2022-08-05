@@ -8,3 +8,32 @@ Can have a function take any number of args by doing rst parameters: function su
 MUST BE AT END OF PARAMETER LIST
 Old times: used arguments in the function to access the args, but many downsides
 
+Spread syntax: ...arr turns array into a list of arguments
+- Can also be used to copy an array arrCopy = [...arr]
+
+(covered scope, lexical environment, var)
+
+Global object (browser - window, nodejs - global, recently added globalThis)
+- to make a global variable, make it a property, like window.currentUser
+
+Function properties
+- name
+- length
+- can add own properties (that are NOT variables)
+
+Named Function Expression (NFE): let sayHi = function func(who) {}
+func allows:
+- function can reference itself internally
+- func not visible outside of function
+
+new Function syntax: turns string into function, used only in specific cases like receiving code from server
+
+setTimeout - allows to run function once after interval of times
+ex: setTimeout(sayHi, 1000, "John"), clear with clearTimeout(timerId)
+setInterval - same thing, but does on an interval
+Using nested setTimeout allows for more precise delay than setInterval
+
+Decorator - function that takes another function and alters its behavior
+func.call - allows calling a function, explicitly setting "this"
+func.apply - same as call, but rather than list of arguments, takes array-like object of them
+func.bind - fixes "this" to a function
