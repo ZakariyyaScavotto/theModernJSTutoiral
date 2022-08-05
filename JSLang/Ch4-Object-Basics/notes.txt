@@ -1,0 +1,22 @@
+Object created with {} or Object()
+- key/value pairing for properties
+- multiword property access, use square brackets with string
+- no restrictions on property naming
+- existence test with in -> iterate over with for...in loop
+
+Copies based on reference for non-primitives -> to duplicate iterate over or use Object.assign({}, objectBeingDuplicated)
+- Note: for nested objects, rather than implementing loop use existing implementation like _.cloneDeep(obj) from JS library Iodash
+
+(covered the auto garbage collection process)
+
+To access object, use "this" keyword
+- Unlike other languages, evaluated during run-time
+- Arrow functions have no this, it uses the this from the outer function
+
+(covered the "new" operator)
+
+?. - optional chaining, stops evaluation if the value before the operator doesn't exist and returns undefined
+
+Symbol type -represents unique identifier
+
+(covered object to primitive conversion)
