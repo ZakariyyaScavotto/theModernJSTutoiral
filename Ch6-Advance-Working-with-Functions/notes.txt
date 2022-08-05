@@ -1,0 +1,10 @@
+(covered recursion)
+
+Can have a function take any number of args by doing rst parameters: function sumAll(...args){
+    let sum = 0
+    for (let arg of args) sum += arg
+    return sum
+}
+MUST BE AT END OF PARAMETER LIST
+Old times: used arguments in the function to access the args, but many downsides
+
