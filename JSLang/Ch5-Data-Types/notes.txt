@@ -1,0 +1,22 @@
+(covered Numbers, Strings, Arrays)
+
+Iterator -lets you make any object iterable
+
+Map - collection of keyed items, where the keys are of any type
+- set, get, has, delete, clear, size
+- iterate over: keys(), values(), entries() - [key, value]
+- entries, fromEntries
+
+Set - set of values where each thing appears once
+- add, delete, has, clear, size
+- keys, values, entries
+
+WeakMap - map that can't be iterated over and doesn't prevent garbage collection
+- usage: additional data storage, caching
+WeakSet - translate WeakMap, but set edition
+
+(covered array destructuring)
+
+... operator: gets the rest of the items in array/object and stores in an array/object
+
+(covered Date, JSON.stringify(), JSON.parse())
