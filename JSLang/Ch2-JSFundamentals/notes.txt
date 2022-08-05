@@ -1,0 +1,65 @@
+Internal scripts:
+- Insert with <script> tag in HTML
+    - type attribute: old for HTML4, not used anymore, commonplace was type"text/javascript"
+        - Now, used for JS modules
+    - language attribute: deprecated since the language is obviously JS
+    -comments in script tag were used way back to hide JS code from browsers that couldn't process
+
+External scripts:
+- Insert with src attribute <script src="path"></script>
+    - can also use URL instead of a path to file
+- To attach multiple scripts, use multiple tags
+- If src is set, internal script writing ignored
+
+Can go with or without semicolons, but need to be careful because sometimes the automatic semicolon insertion doesn't work as intended
+
+To enable modern features and modifications, need to write the line "use strict"; at the top of code
+- Can be put just at the beginning of a function to enable just for that function
+- No way to revert it, once enabled no going back
+- To enable when writing code in developer console, use <Shift+Enter> to input multiple lines, and put 'use strict'; at top above code
+- Does it need enabling? Modern JS classes and modules use it automatically, so not needed (In tutorial, used unless otherwise noted)
+
+Variables:
+- let keyoword: declares changing variables (old school: var)
+- old times: could create variable without let keyword, but will error in strict modern
+- const keyword: declares unchanging variables. with difficult to remember values defined before run-time (like colors) use uppercase constant notation
+
+Data types:
+- number: represents ints and floating points
+    - math is safe in javascript, so can divide by 0 safely (returns Infinity)
+- BigInt: numbers > 2^53-1 (or less than its negative), value created by appending n to end of integer
+- String: '', "", or `` for more functionality
+- Boolean
+- null: unknown
+- undefined: value not assigned
+- object, symbol (unique identifier for objects)
+- figure out with typeof operator (ex: typeof "foo")
+
+Interaction:
+- alert: creates alert modal window
+    - alert("hello")
+- prompt: creates modal window with text message, input field and ok/cancel buttons
+    - result = prompt(textMessage, [default field text parameter that isn't required])
+- confirm: modal window with a question, ok/cancel buttons (true if ok pressed, false otherwise)
+    - confirmation = confirm("Are you the boss")
+
+(covered type conversions, math, other operators)
+
+Strict equality operator === checks equality without type converrsion -> different types immediately returns false
+
+(covered if statements)
+Ternary statement: conditionMet ?(then) thing1 :(else) thing2
+- Use to return one value or another depending on condition, use if operator when ened to execute different branches of code
+
+Went over logic operators (&&, etc.)
+
+a ?? b -> returns a if defined, else b
+
+(went over loops, swtitch, functions)
+
+Function can be saved as a variable, let sayHi = function() {};
+- Can be passed as a parameter to another function
+- When created as variable, can only be used when defined, if declared can be used wherever in the script
+- In strict mode, when function declaration is within a code block, visible everywhere in block but not outside it
+
+Arrow function, let func = (params) => {}
