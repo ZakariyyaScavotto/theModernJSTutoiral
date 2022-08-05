@@ -1,0 +1,9 @@
+Property flags
+- writeable: value can be changed if true, otherwise read only
+- enumerable: listed in loops if true
+- configurable: property can be deleted and attributes modified if true
+- default to true
+- change with Object.defineProperty(obj, prop name, descriptor)
+- can also prevent global changes to the Object
+
+getter and setter methods -> get propName() {}, set propName() {}
